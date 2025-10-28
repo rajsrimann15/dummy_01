@@ -1,5 +1,4 @@
 from flask import Flask, request, jsonify
-import os
 import sqlite3
 
 app = Flask(__name__)
@@ -105,3 +104,4 @@ def delete_user(id):
 if __name__ == '__main__':
     init_db()
     app.run(debug=True)
+
